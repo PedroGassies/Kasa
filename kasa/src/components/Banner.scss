@@ -1,0 +1,21 @@
+.banner {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 120px;
+    color: white;
+    border-radius: 15px;
+
+    .banner-content {
+        padding: 20px 10px;
+        h1 {
+            margin-right: auto;
+            width: 70%;
+            font-size: 25px;
+            font-family: 'Montserrat', sans-serif;
+            white-space: nowrap; // Empêcher les sauts de ligne
+            text-align: left;
+        }
+    }
+}
