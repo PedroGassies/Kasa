@@ -1,4 +1,5 @@
 import './about.scss'
+import Header from '../header'
 export default function About() {
-    return <h1>À propos</h1>
+    return <Header />
 }
