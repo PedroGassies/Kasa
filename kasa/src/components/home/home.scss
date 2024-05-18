@@ -1,5 +1,5 @@
 @use '../../App.scss';
-
+@use '../Banner.scss';
 .home-page {
     @media screen and (max-width: 768px) {
         .header {

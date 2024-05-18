@@ -12,7 +12,7 @@ function Header() {
                         </a>
                     </li>
                     <li>
-                        <a className="about" href="/about">
+                        <a className="about" href="/a-propos">
                             A PROPOS
                         </a>
                     </li>

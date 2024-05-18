@@ -1,1 +1,29 @@
-@use '../../App.scss';
+$font: 'Montserrat', sans-serif;
+$color: #ff6060;
+#error-page {
+    color: $color;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+        font-family: $font;
+        font-size: 100px;
+    }
+    p {
+        width: 70%;
+        margin-bottom: 80px;
+        font-family: $font;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    a {
+        text-decoration: none;
+        margin-bottom: 70px;
+        border-bottom: 1px solid;
+        line-height: 0.9;
+        font-family: $font;
+        font-size: 14px;
+        font-weight: 600;
+        color: black;
+    }
+}

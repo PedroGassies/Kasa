@@ -1,1 +1,21 @@
 @use '../../App.scss';
+
+.about-page {
+    @media screen and (max-width: 768px) {
+        .header {
+            .about {
+                text-decoration: underline;
+            }
+        }
+        .banner {
+            filter: brightness(70%);
+            h1 {
+                display: none;
+            }
+        }
+        .collapse {
+            width: 91%;
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@use '../App.scss';
+$color: #ff6060;
+.collapse-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-radius: 5px;
+    height: 30px;
+    background-color: $color;
+    .collapse-button {
+        margin-right: 10px;
+        background-color: $color;
+        border-style: none;
+        .collapse-icon {
+            transition: transform 0.3s ease;
+
+            &.rotated {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .collapse-text {
+        margin-left: 10px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}

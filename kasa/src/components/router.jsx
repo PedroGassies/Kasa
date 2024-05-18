@@ -1,13 +1,16 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 import ErrorPage from './error-page/error-page'
 import About from './about/about'
 import Home from './home/home'
 import Fiche from './fiche-logement/Fiche-logement'
 
 const Router = createBrowserRouter([
-    //ajouter route par defaut Home
+    {
+        path: '/',
+        element: <Navigate to="/Home" replace />,
+    },
     {
         path: '/Home',
         element: <Home />,
@@ -23,6 +26,10 @@ const Router = createBrowserRouter([
         element: <Fiche />,
         errorElement: <ErrorPage />,
     },
+    {
+        path: '*',
+        element: <ErrorPage />,
+    },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -30,4 +37,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <RouterProvider router={Router} />
     </React.StrictMode>
 )
+
 export default Router

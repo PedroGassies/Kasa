@@ -34,10 +34,6 @@ $font: 'Montserrat', sans-serif;
     }
 }
 
-.card {
-    padding: 2em;
-}
-
 .read-the-docs {
     color: #888;
 }
@@ -74,8 +70,8 @@ $font: 'Montserrat', sans-serif;
 
     .footer {
         background-color: black;
-        padding: 0;
         height: 210px;
+        margin-top: 30px;
         .logo-footer {
             padding-top: 50px;
         }
@@ -85,7 +81,8 @@ $font: 'Montserrat', sans-serif;
             width: 35%;
             color: white;
             font-family: $font;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
         }
     }
 }
