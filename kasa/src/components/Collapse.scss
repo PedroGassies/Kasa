@@ -1,18 +1,28 @@
-@use '../App.scss';
-$color: #ff6060;
 .collapse-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin: 20px 0;
     border-radius: 5px;
-    height: 30px;
-    background-color: $color;
-    .collapse-button {
-        margin-right: 10px;
-        background-color: $color;
-        border-style: none;
-        .collapse-icon {
+    background-color: #ff6060;
+    overflow: hidden;
+
+    .collapse-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #ff6060;
+
+        .collapse-text {
+            margin: 0;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .collapse-button {
+            background: none;
+            border: none;
+            cursor: pointer;
             transition: transform 0.3s ease;
 
             &.rotated {
@@ -20,11 +30,26 @@ $color: #ff6060;
             }
         }
     }
-    .collapse-text {
-        margin-left: 10px;
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        letter-spacing: 1px;
+
+    .collapse-content {
+        max-height: 0;
+        border: none;
+        border-radius: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+
+        &.expanded {
+            max-height: 200px;
+        }
+        .content {
+            background-color: #f0f0f5; /* Changez cette couleur pour différencier le menu */
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 0;
+            p {
+                margin: 0;
+            }
+        }
     }
 }

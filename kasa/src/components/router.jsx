@@ -22,7 +22,7 @@ const Router = createBrowserRouter([
         errorElement: <ErrorPage />,
     },
     {
-        path: '/idDuLogement',
+        path: '/:id',
         element: <Fiche />,
         errorElement: <ErrorPage />,
     },

@@ -13,11 +13,11 @@ export default function ErrorPage() {
     return (
         <div>
             <Header />
-            <div id="error-page">
+            <main id="error-page">
                 <h1>404</h1>
                 <p>Oups! {errorMessage}</p>
-                <a href="/Home">Retourner sur la page d'accueil</a>
-            </div>
+                <a href="/Home">Retourner sur la page d accueil</a>
+            </main>
             <Footer />
         </div>
     )
