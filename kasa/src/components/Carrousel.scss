@@ -1,31 +1,16 @@
 .carousel {
     position: relative;
     width: 91%;
-    max-width: 600px;
-    margin: auto;
+    max-width: 400px;
+    margin: 0 auto;
     overflow: hidden;
-    border-radius: 10px;
 
     .carousel-image {
-        position: relative;
         width: 100%;
-        height: 340px;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        .carousel-counter {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
+        border-radius: 10px;
+        height: 250px;
+        object-fit: cover;
+        display: block;
     }
 
     .carousel-button {
@@ -36,14 +21,36 @@
         color: white;
         font-size: 2em;
         cursor: pointer;
-        z-index: 1;
+        padding: 0 10px;
+    }
 
-        &.prev {
-            left: 10px;
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 5px;
+
+        .indicator {
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            opacity: 0.5;
+            transition: opacity 0.3s;
         }
 
-        &.next {
-            right: 10px;
+        .indicator.active {
+            opacity: 1;
         }
     }
 }

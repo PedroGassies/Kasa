@@ -31,7 +31,15 @@ function Collapse({ text, content }) {
                 }`}
             >
                 <div className="content">
-                    <p>{content}</p>
+                    {Array.isArray(content) ? (
+                        content.map((item, index) => (
+                            <p key={index} className="collapse-item">
+                                {item}
+                            </p>
+                        ))
+                    ) : (
+                        <p>{content}</p>
+                    )}
                 </div>
             </div>
         </div>
@@ -39,7 +47,8 @@ function Collapse({ text, content }) {
 }
 Collapse.propTypes = {
     text: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired,
+    content: PropTypes.oneOfType([PropTypes.string, PropTypes.array])
+        .isRequired,
 }
 
 export default Collapse
