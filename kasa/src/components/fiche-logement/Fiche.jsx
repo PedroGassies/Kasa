@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import './Fiche-logement.scss'
+import './Fiche.scss'
 import Header from '../header'
 import Footer from '../footer'
 import Carrousel from '../Carrousel'
@@ -18,10 +18,12 @@ export default function Fiche() {
                 const foundAnnonce = data.find((annonce) => annonce.id === id)
                 setAnnonce(foundAnnonce)
             })
-            .catch((error) => console.error('Error fetching data:', error))
+            .catch((error) => {
+                console.error('Error fetching data:', error)
+            })
     }, [id]) // Include id in the dependency array
 
-    if (!annonce) {
+    if (annonce === null) {
         return <div>Loading...</div> // Show loading indicator while data is being fetched
     }
 

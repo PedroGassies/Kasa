@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 import './Collapse.scss'
-import buttonImage from '../../public/images/collapse.png'
+import buttonImage from '/images/collapse.png'
 
 function Collapse({ text, content }) {
     const [collapsed, setCollapsed] = useState(true)
