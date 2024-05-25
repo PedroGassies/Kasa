@@ -1,10 +1,10 @@
 $color: #ff6060;
 $font: 'Montserrat', sans-serif;
+
 .collapse-container {
     margin-bottom: 20px;
-    border-radius: 5px;
-    background-color: $color;
     overflow: hidden;
+    border-radius: 5px;
 
     .collapse-header {
         display: flex;
@@ -12,6 +12,7 @@ $font: 'Montserrat', sans-serif;
         justify-content: space-between;
         padding: 10px;
         background-color: $color;
+        border-radius: 5px;
 
         .collapse-text {
             margin: 0;
@@ -35,27 +36,48 @@ $font: 'Montserrat', sans-serif;
 
     .collapse-content {
         max-height: 0;
-        border: none;
-        border-radius: 0;
         overflow: hidden;
         transition: max-height 0.5s ease;
+        border-top: 1px solid #ddd;
+        border-radius: 0;
 
         &.expanded {
             max-height: 200px;
         }
+
         .content {
-            background-color: #f0f0f5; /* Changez cette couleur pour différencier le menu */
+            background-color: rgba(246, 246, 246, 0.45);
             color: black;
             padding: 10px;
-            border: none;
-            border-radius: 0;
-            p {
+
+            .collapse-item {
                 display: flex;
                 justify-content: left;
                 text-align: left;
                 font-family: $font;
-                margin: 2px auto;
+                margin: 2px 0;
             }
         }
     }
+}
+@media screen and (max-width: 1030px) {
+    .collapse-container {
+        .collapse-header {
+            height: 10px;
+            .collapse-icon {
+                height: 7px;
+                width: 7px;
+            }
+            .collapse-text {
+                font-size: 8px;
+            }
+        }
+        .collapse-content {
+            .collapse-item {
+                font-size: 7px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1031px) {
 }

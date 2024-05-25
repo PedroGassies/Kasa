@@ -12,7 +12,8 @@ function Banner({ title, backgroundImage }) {
     const [part1, part2] = title.split(',')
 
     return (
-        <div className="banner" style={bannerStyle}>
+        <div>
+            <div className="banner" style={bannerStyle}></div>
             <div className="banner-content">
                 <h1>
                     {part1},<br />

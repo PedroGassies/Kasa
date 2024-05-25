@@ -8,7 +8,9 @@
             }
         }
         .banner {
-            filter: brightness(70%);
+            filter: brightness(0.7);
+        }
+        .banner-content {
             h1 {
                 display: none;
             }
@@ -17,5 +19,8 @@
             width: 91%;
             margin: 20px auto;
         }
+    }
+    .footer {
+        margin-top: 270px;
     }
 }

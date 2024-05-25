@@ -38,51 +38,78 @@ $font: 'Montserrat', sans-serif;
     color: #888;
 }
 
-@media screen and (max-width: 768px) {
-    .header {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        padding: 1rem;
-        .logo {
-            height: 3em;
-            width: auto;
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem;
+    .logo {
+        height: 3em;
+        width: auto;
+        padding: 0;
+    }
+    nav {
+        width: 50%;
+        .nav-list {
+            list-style: none;
+            display: flex;
             padding: 0;
+            justify-content: space-around;
+            li a {
+                text-decoration: none;
+                font-family: $font;
+                font-size: 15px;
+                font-weight: 550;
+                letter-spacing: -0.5px;
+                color: black;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: black;
+    height: 210px;
+    .logo-footer {
+        padding-top: 50px;
+        width: 150px;
+    }
+    p {
+        padding-top: 20px;
+        margin: 0 auto;
+        width: 35%;
+        color: white;
+        font-family: $font;
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+    }
+}
+@media screen and (max-width: 1030px) {
+    .header {
+        width: 91%;
+        padding: 0;
+        .logo {
+            margin: auto auto auto 0;
+            height: 1.5em;
         }
         nav {
-            width: 50%;
+            margin-left: 25px;
             .nav-list {
-                list-style: none;
-                display: flex;
-                padding: 0;
-                justify-content: space-around;
+                justify-content: space-between;
                 li a {
-                    text-decoration: none;
-                    font-family: $font;
-                    font-size: 15px;
-                    font-weight: 550;
-                    letter-spacing: -0.5px;
-                    color: black;
+                    font-size: 7px;
                 }
             }
         }
     }
-
     .footer {
-        background-color: black;
-        height: 210px;
-        margin-top: 30px;
-        .logo-footer {
-            padding-top: 50px;
-        }
+        height: 160px;
         p {
-            padding-top: 20px;
-            margin: 0 auto;
-            width: 35%;
-            color: white;
-            font-family: $font;
-            font-size: 0.8rem;
-            letter-spacing: 0.5px;
+            padding: 10px;
+            font-size: 8px;
+        }
+        .logo-footer {
+            width: 60px;
         }
     }
 }

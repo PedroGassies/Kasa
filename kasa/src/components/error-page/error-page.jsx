@@ -1,14 +1,9 @@
-import { useRouteError } from 'react-router-dom'
 import './error-page.scss'
 import Header from '../header'
 import Footer from '../footer'
 
 export default function ErrorPage() {
-    const error = useRouteError()
-
-    const errorMessage = error
-        ? error.statusText || error.message
-        : "La page que vous demandez n'existe pas."
+    const errorMessage = "La page que vous demandez n'existe pas."
 
     return (
         <div>

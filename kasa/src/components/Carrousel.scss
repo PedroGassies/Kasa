@@ -22,6 +22,7 @@
         font-size: 2em;
         cursor: pointer;
         padding: 0 10px;
+        background: none;
     }
 
     .prev {
@@ -32,25 +33,15 @@
         right: 10px;
     }
 
-    .carousel-indicators {
+    .carousel-counter {
         position: absolute;
         bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        gap: 5px;
-
-        .indicator {
-            width: 10px;
-            height: 10px;
-            background-color: white;
-            border-radius: 50%;
-            opacity: 0.5;
-            transition: opacity 0.3s;
-        }
-
-        .indicator.active {
-            opacity: 1;
-        }
+        right: 165px;
+        color: #fff;
+        font-family: 'Monserrat', sans-serif;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        z-index: 10;
     }
 }

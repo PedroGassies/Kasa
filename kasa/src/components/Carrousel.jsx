@@ -34,15 +34,8 @@ const Carrousel = ({ images }) => {
                     >
                         ❯
                     </button>
-                    <div className="carousel-indicators">
-                        {images.map((_, index) => (
-                            <span
-                                key={index}
-                                className={`indicator ${
-                                    index === currentIndex ? 'active' : ''
-                                }`}
-                            />
-                        ))}
+                    <div className="carousel-counter">
+                        {currentIndex + 1}/{images.length}
                     </div>
                 </>
             )}
@@ -50,8 +43,8 @@ const Carrousel = ({ images }) => {
     )
 }
 
-export default Carrousel
-
 Carrousel.propTypes = {
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
+
+export default Carrousel

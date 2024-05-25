@@ -38,7 +38,7 @@ function Collapse({ text, content }) {
                             </p>
                         ))
                     ) : (
-                        <p>{content}</p>
+                        <p className="collapse-item">{content}</p>
                     )}
                 </div>
             </div>
