@@ -15,11 +15,11 @@ function Banner({ title, backgroundImage }) {
         <div>
             <div className="banner" style={bannerStyle}></div>
             <div className="banner-content">
-                <h1>
-                    {part1},<br />
-                    {part2}
-                </h1>{' '}
-                {/* Rendre les parties sur des lignes séparées */}
+                <h1 className="banner-title">
+                    {part1}
+                    <span className="comma">,</span>
+                    <span className="part2">{part2}</span>
+                </h1>
             </div>
         </div>
     )

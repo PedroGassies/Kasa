@@ -14,19 +14,51 @@
         top: 110px;
         left: 45px;
         margin-right: auto;
-        width: 70%;
         color: white;
-        font-size: 25px;
+        font-size: 24px;
         font-family: 'Montserrat', sans-serif;
-        white-space: nowrap; // Empêcher les sauts de ligne
         text-align: left;
+        .comma {
+            display: inline; // Virgule sur une ligne
+        }
+        .part2 {
+            display: block;
+        }
     }
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (min-width: 768px) and (max-width: 1300px) {
     .banner {
-        height: 80px;
-        width: 95%;
-        border-radius: 8px;
+        height: 150px;
+        width: 91%;
+    }
+    .banner-content {
+        top: 50px;
+        left: 25px;
+    }
+    .banner-content h1 {
+        font-size: 35px;
+        white-space: normal;
+        top: 170px;
+        left: 90px;
+    }
+    .banner-content .part2 {
+        display: block;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .banner {
+        height: 180px;
+    }
+    .banner-content {
+        h1 {
+            top: 170px;
+            left: 500px;
+            font-size: 40px;
+            white-space: nowrap;
+            .part2 {
+                display: inline;
+            }
+        }
     }
 }

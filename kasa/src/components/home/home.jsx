@@ -21,7 +21,7 @@ export default function Home() {
                     title="Chez vous, partout et ailleurs"
                     backgroundImage="/images/imgBanner.png"
                 />
-                <div className="">
+                <div className="cards-container">
                     {data.map((annonce) => (
                         <Card
                             key={annonce.id}

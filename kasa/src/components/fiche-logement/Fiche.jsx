@@ -38,8 +38,13 @@ export default function Fiche() {
                     />
                 </div>
                 <Datas />
-                <Collapse text="Description" content={annonce.description} />
-                <Collapse text="Equipements" content={annonce.equipments} />
+                <div className="collapse">
+                    <Collapse
+                        text="Description"
+                        content={annonce.description}
+                    />
+                    <Collapse text="Equipements" content={annonce.equipments} />
+                </div>
             </main>
             <Footer />
         </div>

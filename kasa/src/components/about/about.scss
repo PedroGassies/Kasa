@@ -1,26 +1,38 @@
-@use '../../App.scss';
-
 .about-page {
-    @media screen and (max-width: 768px) {
-        .header {
-            .about {
-                text-decoration: underline;
+    .header {
+        .about {
+            text-decoration: underline;
+        }
+    }
+    .banner {
+        filter: brightness(0.7);
+    }
+    .banner-content {
+        h1 {
+            display: none;
+        }
+    }
+    .collapse-container {
+        width: 91%;
+        margin: 20px auto;
+    }
+}
+.footer {
+    margin-top: 80px;
+}
+
+@media screen and (min-width: 1030px) {
+    .about-page {
+        .collapse {
+            flex-direction: column;
+            margin: 40px auto;
+
+            .collapse-container {
+                width: 75%;
             }
-        }
-        .banner {
-            filter: brightness(0.7);
-        }
-        .banner-content {
-            h1 {
-                display: none;
-            }
-        }
-        .collapse-container {
-            width: 91%;
-            margin: 20px auto;
         }
     }
     .footer {
-        margin-top: 270px;
+        margin-top: 20px;
     }
 }

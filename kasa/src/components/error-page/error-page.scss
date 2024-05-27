@@ -31,3 +31,34 @@ $color: #ff6060;
 .footer {
     margin-top: 120px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    #error-page {
+        h1 {
+            font-size: 200px;
+            margin-bottom: 0;
+        }
+        p {
+            font-size: 50px;
+            margin-bottom: 60px;
+        }
+        a {
+            font-size: 35px;
+        }
+    }
+    .footer {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #error-page {
+        h1 {
+            margin: 80px;
+            font-size: 200px;
+        }
+        p {
+            font-size: 35px;
+        }
+    }
+}

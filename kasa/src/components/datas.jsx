@@ -39,13 +39,16 @@ function Datas() {
         <div className="loading-datas">
             {annonce ? (
                 <div className="donnees">
-                    <h2>{annonce.title}</h2>
-                    <h3>{annonce.location}</h3>
-                    <div className="tag">
-                        {annonce.tags.map((tag, index) => (
-                            <span key={index}>{tag}</span>
-                        ))}
+                    <div className="titres">
+                        <h2>{annonce.title}</h2>
+                        <h3>{annonce.location}</h3>
+                        <div className="tag">
+                            {annonce.tags.map((tag, index) => (
+                                <span key={index}>{tag}</span>
+                            ))}
+                        </div>
                     </div>
+
                     <div className="note">
                         <div className="rating">
                             {renderStars(annonce.rating)}

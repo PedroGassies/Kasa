@@ -60,24 +60,24 @@ $font: 'Montserrat', sans-serif;
         }
     }
 }
-@media screen and (max-width: 1030px) {
+@media screen and (min-width: 768px) and (max-width: 1300px) {
     .collapse-container {
         .collapse-header {
-            height: 10px;
+            margin-top: 40px;
+            height: 50px;
+
             .collapse-icon {
-                height: 7px;
-                width: 7px;
+                height: 20px;
+                width: 30px;
             }
             .collapse-text {
-                font-size: 8px;
+                font-size: 30px;
             }
         }
         .collapse-content {
             .collapse-item {
-                font-size: 7px;
+                font-size: 25px;
             }
         }
     }
-}
-@media screen and (min-width: 1031px) {
 }

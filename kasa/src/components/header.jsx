@@ -8,12 +8,12 @@ function Header() {
                 <ul className="nav-list">
                     <li>
                         <a className="accueil" href="/Home">
-                            ACCUEIL
+                            Accueil
                         </a>
                     </li>
                     <li>
                         <a className="about" href="/a-propos">
-                            A PROPOS
+                            A Propos
                         </a>
                     </li>
                 </ul>

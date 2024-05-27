@@ -1,4 +1,32 @@
+@use '../../App.scss';
 .collapse-container {
     margin: 20px auto;
     width: 91%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300) {
+    .collapse {
+        .collapse-container {
+            margin-top: 40px;
+            width: 95%;
+        }
+    }
+    .footer {
+        height: 350px;
+        .logo-footer {
+            padding-top: 100px;
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .collapse {
+        display: flex;
+        .collapse-container {
+            width: 42%;
+            .collapse-header {
+                height: 30px;
+            }
+        }
+    }
 }
